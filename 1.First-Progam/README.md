@@ -1,6 +1,6 @@
 # First Progam
 
-### Who compile and run that fist program hello.c : 
+### How compile and run that fist program hello.c : 
 
 ```Bash
 
