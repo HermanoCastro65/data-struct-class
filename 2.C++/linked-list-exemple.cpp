@@ -32,20 +32,30 @@ void allocate10(node *root)
 
 void removeAll(node *root)
 {
+  cout << root;
+  int i = 11;
   while (root != NULL)
   {
+    cout << "Initial Root " << i-- << " = " << root;
     node *current = root;
     root = root->next;
     delete (current);
+    cout << "Final Root " << i << " = " << root;
   }
 }
 
 int main(int argc, char **argv)
 {
-
   node *root = NULL;
+
+  cout << "Call alocatte10: \n";
   allocate10(root);
+  cout << "Finish alocatte10 \n"
+       << " - - - - - - - -  \n";
+
+  cout << "Call removeAll: \n";
   removeAll(root);
+  cout << "Finish removeAll \n";
 
   return 0;
 }
