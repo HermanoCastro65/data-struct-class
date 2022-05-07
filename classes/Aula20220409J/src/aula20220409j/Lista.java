@@ -11,7 +11,7 @@ package aula20220409j;
  */
 public abstract class Lista<K> {
 
-    class NoLista<K> {
+    class NoLista<T> {
 
         K dado;
         NoLista<K> proximo;
