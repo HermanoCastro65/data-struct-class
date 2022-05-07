@@ -1,0 +1,40 @@
+1 - Compare vetores e listas indicando vantagens e desvantagens de cada estrutura.
+
+O vetor é uma estrutura de dados indexada, que pode armazenar uma determinada quantidade de valores do mesmo tipo.
+Os dados armazenados em um vetor são chamados de itens do vetor.
+Para localizar a posição de um item em um vetor usamos um número inteiro denominado índice do vetor.
+Vantagem de utilização do vetor:
+Facilidade de manipular um grande conjunto de dados do mesmo tipo declarando-se apenas uma variável.
+
+Uma lista encadeada é uma representação de uma sequência de objetos, todos do mesmo tipo, na memória RAM do computador. 
+Cada elemento da sequência é armazenado em uma célula da lista. 
+O primeiro elemento na primeira célula, o segundo na segunda, e assim por diante.
+Em uma lista encadeada , para cada novo elemento inserido na estrutura, alocamos um espaço de memória para armazená-lo. 
+Dessa forma, o espaço total ocupado na memória é proporcional ao número de elementos da lista. 
+No entanto, não podemos garantir que os elementos armazenados na memória ocuparão um espaço contíguo, e por isso não temos acesso aos elementos da lista diretamente.
+
+2- Para que ser a cláusula Struct?
+
+Struct é uma abreviação para Structure, que significa estrutura em português. 
+Na linguagem de programação C é uma estrutura de dados composto que define fisicamente uma lista de variáveis agrupadas sob um nome em um bloco de memória.
+Todas as variáveis conseguem ser acessadas por meio de um único ponteiro ou pelo que é declarado na estrutura que retorna o mesmo endereço.
+No Struct, conseguimos agrupar diversos tipos de dados.
+É usado com frequência para registros de tipos de dados mistos, algo como um cadastro que requer vários dados diferentes.
+
+3- Quais os operadores para alocação e liberação de memória em C++?
+
+C usa a função malloc() e calloc() para alocar memória dinamicamente em tempo de execução.
+C usa a função free() para liberar memória alocada dinamicamente. 
+C++ suporta essas funções e também possui dois operadores new e delete.
+Esses operadores realizam a tarefa de alocar e liberar a memória de uma maneira melhor e mais fácil.
+
+Questões 4 e 5 estão em códigos.
+
+Para o projeto de Aplicação pedido no trabalho utilizei o VS Code como editor de código.
+Fiz os códigos em Linguagem C e compilei pelo terminal usando os seguintes comandos no diretóro da aplicação:
+# clang AplicacaoLista.c -o AplicacaoLista.exe
+# clang AplicacaoVetor.c -o AplicacaoVetor.exe
+Para executar os arquivos compilados basta rodar os seguintes comandos nos diretórios:
+# ./AplicacaoLista.exe
+# ./AplicacaoVetor.exe
+Os dois programas são aplicação de console.
