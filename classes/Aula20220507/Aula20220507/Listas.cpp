@@ -216,7 +216,7 @@ bool removeNomeCircular(NoDuplo*& raiz, std::string nome)
 	NoDuplo* aux = findNomeCircular(raiz, nome);
 	if (aux == nullptr) {
 		return false;
-		// N�o encontrou
+		// Não encontrou
 	}
 	if (aux->proximo == aux) {
 		// Ocorre apenas quando a raiz é o único elemento
