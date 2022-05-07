@@ -18,7 +18,7 @@ void addNode(NoSimples*& raiz, std::string nome)
 	if (aux != nullptr && aux->nome == nome)
 		return; // Nada a fazer
 	if (anterior == nullptr) {
-		// Entra na primeira posição
+		// Entra na primeira posiÃ§Ã£o
 		NoSimples* novo = createNoSimples(nome);
 		novo->proximo = raiz;
 		raiz = novo;
@@ -56,7 +56,7 @@ bool removeNome(NoSimples*& raiz, std::string nome)
 	NoSimples* aux = findNome(raiz, nome);
 	if (aux == nullptr) {
 		return false;
-		// Não encontrou
+		// NÃ£o encontrou
 	}
 	if (aux == raiz) {
 		raiz = raiz->proximo;
@@ -105,7 +105,7 @@ void addNode(NoDuplo*& raiz, std::string nome)
 	if (aux != nullptr && aux->nome == nome)
 		return; // Nada a fazer
 	if (anterior == nullptr) {
-		// Entra na primeira posição
+		// Entra na primeira posiÃ§Ã£o
 		NoDuplo* novo = createNoDuplo(nome);
 		novo->proximo = raiz;
 		if (raiz != nullptr)
@@ -138,7 +138,7 @@ bool removeNome(NoDuplo*& raiz, std::string nome)
 	NoDuplo* aux = findNome(raiz, nome);
 	if (aux == nullptr) {
 		return false;
-		// Não encontrou
+		// NÃ£o encontrou
 	}
 	if (aux == raiz) {
 		raiz = raiz->proximo;
@@ -216,10 +216,10 @@ bool removeNomeCircular(NoDuplo*& raiz, std::string nome)
 	NoDuplo* aux = findNomeCircular(raiz, nome);
 	if (aux == nullptr) {
 		return false;
-		// Não encontrou
+		// Nï¿½o encontrou
 	}
 	if (aux->proximo == aux) {
-		// Ocorre apenas quando a raiz é o único elemento
+		// Ocorre apenas quando a raiz Ã© o Ãºnico elemento
 		raiz = nullptr;
 		delete aux;
 		return true;
@@ -248,7 +248,7 @@ void removerListaCircular(NoDuplo*& raiz)
 	while (raiz != nullptr) {
 		NoDuplo* aux = raiz;
 		raiz = raiz->proximo;
-		// Quando aponta para si mesmo é o único elemento
+		// Quando aponta para si mesmo Ã© o Ãºnico elemento
 		if (raiz == aux)
 			raiz = nullptr;
 		else {

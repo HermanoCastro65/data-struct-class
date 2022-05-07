@@ -13,9 +13,9 @@ struct NoDuplo {
 	std::string nome;
 };
 
-// Uso de modelo com inclus„o ordenada...
+// Uso de modelo com inclus√£o ordenada...
 // Busca simplificada
-// Uso de vetor permitiria busca bin·ria
+// Uso de vetor permitiria busca bin√°ria
 
 NoSimples* createNoSimples(std::string nome);
 void addNode(NoSimples*& raiz, std::string nome);
